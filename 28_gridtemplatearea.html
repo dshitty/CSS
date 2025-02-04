@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'content content content aside'
+            'footer footer footer footer';
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 3px;
+        }
+        #navbar{
+           grid-area: navbar;
+        }
+        #content{
+            grid-area: content;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div id="navbar" class="box">home about contact email</div>
+            <div id="content" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda similique eius officia beatae non officiis perspiciatis quos ab saepe dolorem corrupti, dolores suscipit reprehenderit nobis ullam architecto ducimus quae commodi eveniet quas voluptatem alias laborum. Possimus placeat harum, quo illum ipsam hic nobis dolore vel, architecto repellat velit doloremque facere vitae nihil dolor assumenda. Iure aspernatur quas corporis, ullam beatae tempora temporibus maiores minima asperiores? Ab illo saepe est corporis hic autem, inventore aliquid exercitationem recusandae ad iusto vel quas impedit veritatis laboriosam odio amet ex, laudantium voluptatibus cumque aut assumenda aspernatur cum. Mollitia facere deleniti delectus obcaecati quia, assumenda ad ipsa minus officiis odit itaque modi a. Obcaecati perspiciatis tempore reprehenderit debitis delectus quam! Molestias ipsa qui et magni!</div>
+            <div id="aside" class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, adipisci. Saepe sequi praesentium corrupti officia consequatur laborum nobis, excepturi eaque, harum omnis, voluptatem nostrum nulla illo perspiciatis quo perferendis rerum! Excepturi quaerat, ratione magnam molestiae est ullam eveniet modi vitae dolor illo eaque. Officiis in reiciendis ad harum natus nisi? Dolor, provident excepturi, distinctio obcaecati quos doloremque voluptates, necessitatibus iure aspernatur eaque quisquam ipsum deserunt officiis quod dolorum dicta reprehenderit alias corrupti natus suscipit commodi ullam laudantium itaque praesentium? Delectus, dolore. Temporibus unde alias soluta consectetur placeat a nemo dicta! Sit laudantium enim accusantium consequatur quam? Recusandae consequatur maiores provident.</div>
+            <div id="footer" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, vel. Modi atque, quis, consectetur consequatur laudantium, vitae itaque perferendis facere autem quae deserunt excepturi aut voluptatem quaerat. Iure saepe ipsam rem modi, animi voluptas repellendus tempore temporibus est cumque at, perferendis illum. Praesentium, laboriosam minus maiores quidem explicabo dolores eum.</div>
+            <!-- <div class="box">item5</div>
+            <div class="box">item6</div>
+            <div class="box">item7</div>
+            <div class="box">item8</div>
+            <div class="box">item9</div>
+            <div class="box">item10</div>
+            <div class="box">item11</div>
+            <div class="box">item12</div>
+            <div class="box">item13</div>
+            <div class="box">item14</div> -->
+        </div>
+</body>
+</html>

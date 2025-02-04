@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: rgb(155, 197, 197);
+            border-radius: 50px;
+            border: 2px solid green;
+            padding: 2px 0px;
+            
+        }
+
+        .navbar ul {
+             overflow: auto;    /*overflow auto should be in ul not in navbar It helps to add scroll bar when necessary */
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 1px 7px;
+            padding: 1px 0px;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; /*helps to remove bullets or list style*/
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            margin: 0px 8px;
+            padding: 9px 5px;
+            color: black;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /*helps to remove underline*/
+            color: white;
+        }
+
+        /* .search {
+            margin: 0px 5px;
+            float: right;
+        
+        } */
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+<nav>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <!-- => ul le space dinxw li lai tarw aba li nai eutai line ma aayepaxi(float left ko karan) tw ul ko space eutai line ma simit bhayo tesaile div ko contain aarko line ma gayena -->
+                    <div class="search">
+                       <input type="text" name="searchme" placeholder="Search">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+</nav>
+</body>
+
+</html>

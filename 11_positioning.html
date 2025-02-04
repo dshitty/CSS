@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        /* CSS position: static(default), relative, absolute, fixed, sticky */
+        .container {
+            border: 8px solid rgb(50, 243, 79);
+            background-color: rgb(165, 201, 230);
+            height: 2000px;
+        }
+
+        .box {
+            /* display: inline;  with display inline we cannot set width so we use inline-block to take table in  same line or change block element(div) to inline element*/
+            display: inline-block;
+            border: 2px solid red;
+            margin: 2px 3px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #box3 {
+            /* relative: relative to its original position and leaves the gap at its original position */
+            position: relative;
+            top: 80px;
+            left: 100px;
+        }
+
+        #box2 {
+             /* absolute: relative to its first parent and doesnot leave the gap at its original position */
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+        #box5{ 
+            /* fixed: positions relative to the browser window */
+            position: fixed;
+            top: 250px;
+        }
+        #box1{
+            /* sticky: positions relative to their first parent/ essential while making a menu in website */
+            position: sticky;
+            top: 6px;
+        }
+        /* be careful in fixed and sticky */
+        /* when position is fixed it is removed from normal document flow but when position is sticky it remains in a normal document flow. */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea amet magnam doloremque quisquam provident incidunt expedita ipsa. Possimus perspiciatis, voluptate, perferendis consequatur provident dignissimos commodi error vitae quas natus blanditiis autem. Magnam esse commodi id in sequi! Temporibus eaque, neque ex odio ipsa accusamus fugit accusantium necessitatibus ipsam, molestias dignissimos voluptates voluptatem laboriosam nobis quis, nulla mollitia tenetur porro ducimus nostrum officia. Fugit cupiditate iusto cum nesciunt, quae repellendus. Enim numquam eius qui iusto amet doloribus totam nam reprehenderit, vel ea in sequi esse, tempora aspernatur! Quam officiis id dolorem ipsam doloribus facere, quaerat natus quis dolore magnam porro iste sit reprehenderit aliquam molestias, mollitia maiores quisquam quo sunt odio nesciunt? Harum sunt debitis illo, adipisci sit deleniti! Iste minima voluptatibus doloribus, reiciendis incidunt ipsa exercitationem cum mollitia explicabo a distinctio repellat obcaecati? Aut aliquam labore culpa reprehenderit minima sint ducimus obcaecati inventore cum dolore suscipit vitae facilis, sit laboriosam asperiores accusantium, corporis, esse non? A perspiciatis provident repudiandae adipisci, asperiores, harum libero cum tenetur error similique officiis laborum totam eos, nesciunt labore! Possimus ex aspernatur consequatur quasi assumenda. Illo sequi tempora facilis neque sint cumque molestias laborum similique ipsum maiores, aliquid laboriosam voluptatum libero porro, nihil accusantium, necessitatibus dolor modi incidunt. Delectus quo praesentium sunt hic. Eum sequi eos expedita nemo deserunt, molestiae officiis labore itaque! Nostrum quasi qui placeat, voluptas similique atque quas assumenda alias saepe, quaerat magnam tenetur veniam perspiciatis velit eaque esse, nisi ab praesentium ducimus obcaecati officia neque aliquid optio iure. Aliquid quisquam tenetur recusandae, aperiam molestiae labore illum perspiciatis et mollitia dolorum quo ad dignissimos voluptas nobis cupiditate praesentium ratione nisi consequatur, soluta inventore incidunt sunt itaque repellendus? Aut consequatur aliquid dolores. Sint nihil natus fugiat, minima hic reiciendis blanditiis, fuga obcaecati nulla quod facere, quam culpa non. Dolore dolor quibusdam provident, fuga tempora quia atque error sequi nihil corporis facere dolorem, nobis, consectetur vitae facilis asperiores? Nemo, non. Ipsum adipisci quos, voluptates velit accusamus quidem cupiditate omnis. Suscipit amet iusto doloremque. Laborum dolore nulla molestiae adipisci velit quidem. Officia reprehenderit sit similique facilis! Quae assumenda amet delectus quas tempore, molestiae voluptas sint ullam magni. Alias, quasi atque consequuntur error soluta numquam porro.</p>
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+
+</html>

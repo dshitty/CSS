@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-property</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 70px;
+            background-color: magenta;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            border: 6px solid red;   
+            background-color: aqua;
+            transition: all 1s ease-in-out 0.3s ;
+        }
+        p:hover{         
+            transform: rotate(60deg);
+            transform: skew(60deg);
+            transform: scale(1.5);
+            transform: translateX(200px); 
+            transform: translateY(300px); 
+            transform: translate(100px, 200px); 
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <p>what the hell
+    </p>
+</div>
+    
+</body>
+</html>

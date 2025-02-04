@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width, height, border and background</title>
+    <style>
+        #firstPara {
+            background-color: rgb(150, 0, 0);
+            height: 100px;
+            width: 260px;
+            border-width: 8px;
+            border-color: rgb(0, 240, 100);
+            border-style: solid;
+            /* these three can also be written as */
+            /* border: 8px solid red;         */
+            border-radius: 4px; /*gives curve at the edges*/
+        }
+        #secondPara{
+            background-color: rgb(150, 0, 0);
+            height: 100px;
+            width: 260px;
+            border-left: 8px solid rgb(0, 240, 100);
+            border-right: 8px solid rgb(200, 40, 100);
+            border-top: 8px solid rgb(200, 200, 200);
+            border-bottom: 8px solid rgb(0, 40, 100);
+            border-top-left-radius: 4px;
+        }
+        #thirdPara{
+            height: 300px;
+            width: 1000px;
+            border: 23px solid pink;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DMruggBWf69R2tcJXD0ItubPYECTKEWtO-WtTHQVYQ&s');
+            background-repeat: no-repeat; /* repeat x and y repeats image in x and y axis.*/
+            background-position: top center;/*first option is top/center/bottom and second option is left/center/right.*/
+            background-position: bottom center;
+            background-position: bottom left;
+            background-position: bottom right;
+            background-position: top right;
+            background-position: top left;
+            background-position: center center;
+        }
+        #forthpara{
+            width: 1000px;
+            height: 300px;
+            border: 12px solid green;
+            border-radius: 12px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is a first heading</h3>
+    <p id="firstPara">This is a first para</p>
+    <h3>This is a second heading</h3>
+    <p id="secondPara">This is a second para</p>
+    <h3>This is a third heading</h3>
+    <p id="thirdPara">This is a third para</p>
+    <p id="forthpara">This is the 4th para </p>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth child pseudo selector</title>
+    <style>
+      input[type='text']{
+        background-color: aqua;
+    }
+    a{
+        display: block;
+    }
+    a[target='_blank']{
+        background-color: blanchedalmond;
+    }
+    a[target='_self']{
+        background-color: rgb(184, 119, 23);
+    }
+    ul :nth-child(3){
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <form action="">
+            <a href="facebook.com" target="_blank">facebook</a>
+            <a href="youtube.com" target="_self">youtube</a>
+            <input type="text" placeholder="enter your name" >
+            <input type="number" placeholder="enter your age">
+            <input type="submit">
+        </form>
+        <ul>
+           <li id="id1">item1</li>
+           <li id="id2">item2</li>
+           <li id="id3">item3</li>
+           <li id="id4">item4</li>
+           <li id="id5">item5</li>
+           <li id="id6">item6</li>
+           <li id="id7">item7</li>
+           <li id="id8">item8</li>
+           <li id="id9">item9</li>
+           <li id="id10">item10</li>
+        </ul>
+    </div>
+</body>
+</html>

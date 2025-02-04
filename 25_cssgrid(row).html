@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 4fr 8fr 4fr; /*=> here other row will have 4 fr as a default size*/
+            /* if we want to change the default size we use grid auto*/
+            grid-auto-rows: 1fr;
+            grid-template-columns: 2fr 3fr 1fr;
+            grid-gap: 7px;
+        }
+         .box {
+            /* width: 100px;
+            height: 100px; */
+            border: 3px solid pink;
+            background-color: aqua;
+            margin: 5px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is item 1</div>
+        <div class="box">This is item 2</div>
+        <div class="box">This is item 3</div>
+        <div class="box">This is item 4</div>
+        <div class="box">This is item 5</div>
+        <div class="box">This is item 6</div>
+        <div class="box">This is item 7</div>
+        <div class="box">This is item 8</div>
+        <div class="box">This is item 9</div>
+        <div class="box">This is item 10</div>
+        <div class="box">This is item 11</div>
+        <div class="box">This is item 12</div>
+        <div class="box">This is item 13</div>
+        <div class="box">This is item 14</div>
+        <div class="box">This is item 15</div>
+    </div>
+</body>
+</html>

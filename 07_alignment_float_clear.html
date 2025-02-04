@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment, float and clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: rgb(220, 164, 213);
+        width:  353px;
+        border: 5px solid rgba(89, 236, 152, 0.9);
+        /* margin:auto auto; center */
+
+
+    }
+
+    .item {
+        padding: 10px 12px;
+        margin: 11px 0px;
+        background-color: rgba(186, 186, 214, 0.865);
+        border: 3px solid rgba(150, 97, 97, 0.858);
+        font-family: 'Sevillana', cursive;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #apple{
+        float: left;
+        width: 48%;
+        
+    }
+    #books{
+        float: right;
+        width: 48%;
+    
+    }
+    #Stationary{
+        clear: both; /*float dekhi hatauna clear use garni incase overlap bhako bela*/
+    }
+    /* p,h3{
+        text-align: justify;
+    } */
+    #heading{
+        margin:-16px 103px;
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h3>Supply Center</h3>
+        </div>
+        <div id="apple" class="item">
+            <h3>Apple</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo sit dolorem iure, nihil, harum
+                quidem hic delectus odit vero possimus, nostrum eius placeat aperiam fugiat laborum officiis. In
+                voluptate ipsa quidem a modi.</p>
+        </div>
+        <div id="books" class="item">
+            <h3>Books</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo sit dolorem iure, nihil, harum
+                quidem hic delectus odit vero possimus, nostrum eius placeat aperiam fugiat laborum officiis. In
+                voluptate ipsa quidem a modi.</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo sit dolorem iure, nihil, harum
+                quidem hic delectus odit vero possimus, nostrum eius placeat aperiam fugiat laborum officiis. In
+                voluptate ipsa quidem a modi.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

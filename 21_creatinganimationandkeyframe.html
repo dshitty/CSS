@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframe</title>
+    <style>
+        img{
+            display: block;
+            margin: auto;
+            width: 200px;
+            position: relative;
+            animation-name: drsn;
+            animation-name: drsn1;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            /* -------->shorthand<--------
+            animation: animation-name animation-duration: aimantion-timing-function animation-delay animation-iteration-count animation-fill-mode;; */
+        }
+        @keyframes drsn1{
+            0%{
+                top: 0px;
+                bottom: 100px;
+            }
+            25%{
+                top: 50px;
+                bottom: 50px;
+            }
+            50%{
+              right: 60px;
+              left: 20px;
+            }
+            75%{
+                top: 50px;
+                bottom: 50px;
+            }
+            100%{
+                right: 20px;
+                left: 60px;
+            } 
+
+         }
+        @keyframes drsn{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2013/07/13/10/50/heart-157895_640.png" alt="error">
+</body>
+</html>

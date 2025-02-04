@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+header{
+    width: 200px;
+    margin: auto;
+    border: 2px solid red;         
+}
+img{
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+h3{
+    text-align: center;
+}
+span{
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.darshan{
+    border: 2px solid red;
+    padding: 23px;
+    margin: 12px;
+    background-color: grey;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;  /*it sets the total width including margin and padding withhout it, marging and padding will change its width*/
+}
+.container{
+    margin: auto;
+    width: 1200px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div>
+        <img src="https://img.freepik.com/premium-photo/couple-love-postcard-valentine-s-day-generative-ai_791958-21.jpg"alt="error" >
+    </div>
+    <!-- block element has a width of 100% so it takes the total space hence no auto margin -->
+    <!-- aba width nai xaina bhani kasari auto margin hunxa width diyena bhani mildaina
+                 margin auto garna width hunuparxw
+                and we cannot set width in inline element so we change inline element
+                to block element by using display block (display property) and use auto margin -->
+    <h3>hi</h3>
+    <span>gooiye</span>
+</header>
+<div class="container">
+    <div class="darshan">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem possimus eos repellendus delectus quam cumque nobis asperiores doloribus, quod nisi commodi hic! Quae.</p>
+    </div>
+    <div class="darshan">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem possimus eos repellendus delectus quam cumque nobis asperiores doloribus, quod nisi commodi hic! Quae.</p>
+    </div>
+    <div class="darshan">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem possimus eos repellendus delectus quam cumque nobis asperiores doloribus, quod nisi commodi hic! Quae.</p>
+    </div>
+</div>
+
+</body>
+</html>
